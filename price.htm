@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Стоимость</title>
+	<link rel="stylesheet" href="styles.css"></link>
+	<script src="script.js"></script>
+	
+	<style>
+	    .style4 {
+			background-color: #D0B9A2;
+		}
+		.style5 {
+			background-color: black;
+			color: white;
+		}
+    </style>
+    
+</head>
+
+<body>
+	<button onclick="goBack()" style="padding: 10px 20px; margin-left:280px; margin-top:52px;">← НАЗАД</button>
+	<div class="order_page">СТОИМОСТЬ</div>
+	
+	<div style="margin-left:280px">
+		<button id="danceButton" onclick="showTable('danceTable', this)" class="toggle-button">ТАНЦЫ</button>
+		<button id="rentalButton" onclick="showTable('rentalTable', this)" class="toggle-button">АРЕНДА</button>
+	</div>
+	
+	<div id="danceTable">
+		<table class="pricing-table">
+			<caption style="margin-left:175px; font-weight: normal; margin-bottom: 5px; font-size: 24px">Тарифы</caption>
+		    <thead>
+		        <tr>
+		        	<th style="width: 160px">Пакеты</th>
+		            <th>Стандарт</th>
+		            <th style="width: 380px" class="style4">Регулярный</th>
+		            <th style="width: 380px" class="style5">Развитие</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		        	<td style="width: 160px">5</td>
+		            <td>2 900 ₽</td>
+		            <td style="width: 380px" class="style4">━</td>
+		            <td style="width: 380px" class="style5">━</td>
+		        </tr>
+		        <tr>
+		        	<td style="width: 160px">10</td>
+		            <td>5 800 ₽</td>
+		            <td style="width: 380px" class="style4">7 050 ₽</td>
+		            <td style="width: 380px" class="style5">7 650 ₽</td>
+		        </tr>
+		        <tr>
+		        	<td style="width: 160px">15</td>
+		            <td>━</td>
+		            <td style="width: 380px" class="style4">9 400 ₽</td>
+		            <td style="width: 380px" class="style5">10 200 ₽</td>
+		        </tr>
+		        <tr>
+		        	<td style="width: 160px">20</td>
+		            <td>━</td>
+		            <td style="width: 380px" class="style4">14 100 ₽</td>
+		            <td style="width: 380px" class="style5">15 300 ₽</td>
+		        </tr>
+		        <tr>
+		        	<td style="width: 160px">30</td>
+		            <td>━</td>
+		            <td style="width: 380px" class="style4">23 500 ₽</td>
+		            <td style="width: 380px" class="style5">25 500 ₽</td>
+		        </tr>
+		    </tbody>
+		</table>
+		
+		<div style="margin: 40px 400px; font-size: 24px">
+			<span>Стандарт: все преподаватели; любые группы; несколько пользователей.</span>
+			<p>Регулярный: 1 преподаватель, любые группы 1 преподавателя, 1 пользователь.</p>
+			<p>Развитие: все преподаватели, любые группы; несколько пользователей.</p>
+			<p style="margin-left: 635px; width:600px; margin-top: 80px;">© Все тарифы и пакеты не имеют срока действия</p>
+		</div>
+		
+	</div>
+	
+	<div id="rentalTable">
+		<div class="inform_arenda">
+			<div>Основная цена указана за время с 18:00 до 21:00.</div>
+			<div>Вторая цена – в остальное время.</div>
+		</div>
+		<div class="cards_arenda">
+			<div class="card_arenda">
+				<div class="order_card">БОЛЬШОЙ ЗАЛ</div>
+				<div class="price_card">1 500 ₽</div>
+				<div class="small_price_card">/ 1 300 ₽</div>
+			</div>
+			<div class="card_arenda">
+				<div class="order_card">ПАРКЕТНЫЙ ЗАЛ</div>
+				<div class="price_card">1 400 ₽</div>
+				<div class="small_price_card">/ 1 200 ₽</div>
+			</div>
+			<div class="card_arenda">
+				<div class="order_card">ЧЕРНЫЙ ЗАЛ</div>
+				<div class="price_card">1 200 ₽</div>
+				<div class="small_price_card">/ 1 000 ₽</div>
+			</div>
+			<div class="card_arenda">
+				<div class="order_card">ЗЕРКАЛЬНЫЕ ЗАЛЫ</div>
+				<div class="price_card">1 100 ₽</div>
+				<div class="small_price_card">/ 900 ₽</div>
+			</div>
+			<div class="card_arenda">
+				<div class="order_card">МАЛЫЙ ЗАЛ</div>
+				<div class="price_card">1 000 ₽</div>
+				<div class="small_price_card">/ 800 ₽</div>
+			</div>
+			<div class="card_arenda">
+				<div class="order_card">ПРОСТРАНСТВО</div>
+				<div class="price_card">1 300 ₽</div>
+				<div class="small_price_card">/ 1 100 ₽</div>
+			</div>
+		</div>
+	</div>
+	
+	<div style="margin-top:100px;"></div>
+	<iframe src="footer.htm" width="100%" height="500px" style="border:none;" target="основная"></iframe>
+</body>
+
+</html>
